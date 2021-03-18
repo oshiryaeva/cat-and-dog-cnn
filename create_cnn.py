@@ -22,7 +22,7 @@ model.add(MaxPooling2D(pool_size=(2, 2)))
 # Step 3 - Flattening
 model.add(Flatten())
 # Step 4 - Full connection
-model.add(Dense(units=128, activation='relu'))
+model.add(Dense(units=64, activation='relu'))
 model.add(Dense(units=1, activation='sigmoid'))
 # Compiling the CNN
 model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
